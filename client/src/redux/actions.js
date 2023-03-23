@@ -13,7 +13,7 @@ export const FILTER_ACTIVITY = "FILTER_ACTIVITY";
 export function getCountries(){
     return async function(dispatch){
         try{
-            let response = await axios.get("/countries");
+            let response = await axios.get(`/countries`);
             return dispatch({
             type: GET_COUNTRIES,
             payload: response.data,

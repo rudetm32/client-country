@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from "react-redux"
-import axios from "axios";
+// import axios from "axios";
 
 import store from "./redux/store"
 import App from './App';
 
 import './index.css';
 
-//axios.defaults.baseURL= "http//localhost:3001";
-axios.defaults.baseURL= "https://server-countries-production-2ad9.up.railway.app";
+// //axios.defaults.baseURL= "http//localhost:3001";
+// axios.defaults.baseURL= "https://server-countries-production-2ad9.up.railway.app";
 
 ReactDOM.render(
   <React.StrictMode>

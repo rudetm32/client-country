@@ -7,9 +7,11 @@ import Formulario from "./components/Formulario";
 import Detail from "./components/Detail";
 import NavBar from "./components/NavBar";
 
-
+import axios from "axios"
 import './App.css';
 import SearchBar from "./components/SearchBar";
+//axios.defaults.baseURL= "http//localhost:3001";
+axios.defaults.baseURL= "https://server-countries-production-2ad9.up.railway.app";
 
 function App() {
   const location = useLocation()
