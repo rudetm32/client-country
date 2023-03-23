@@ -13,7 +13,7 @@ export const FILTER_ACTIVITY = "FILTER_ACTIVITY";
 export function getCountries(){
     return async function(dispatch){
         try{
-            let response = await axios.get("https://server-countries-production-2ad9.up.railway.app/countries");
+            let response = await axios.get("/countries");
             return dispatch({
             type: GET_COUNTRIES,
             payload: response.data,
@@ -26,7 +26,7 @@ export function getCountries(){
 export function getActivity(){
     return async function (dispatch){
         try {
-            let response = await axios.get(`https://server-countries-production-2ad9.up.railway.app/activity`)
+            let response = await axios.get(`/activity`)
             return dispatch({
                 type: GET_ACTIVITY,
                 payload: response.data
@@ -39,7 +39,7 @@ export function getActivity(){
 export function getDetail(id){
     return async function(dispatch){
         try {
-            let response = await axios.get(`https://server-countries-production-2ad9.up.railway.app/countries/${id}`)
+            let response = await axios.get(`/countries/${id}`)
             return dispatch({
                 type: GET_DETAIL,
                 payload: response.data
@@ -52,7 +52,7 @@ export function getDetail(id){
 export function searchName(name){
     return async function(dispatch){
         try{
-            const response = await axios.get(`https://server-countries-production-2ad9.up.railway.app/countries?name=${name}`)
+            const response = await axios.get(`/countries?name=${name}`)
             const result = response.data
             return  dispatch({
                     type: SEARCH_NAME,
