@@ -56,7 +56,7 @@ const history = useHistory()
 
 function handleSubmit(e) {
   e.preventDefault()
-axios.post("https://server-countries-production-2ad9.up.railway.app/activity", input)
+axios.post("/activity", input)
 .then(alert(`${input.nombre} adicionada al pais:  ${input.idCountry}`))
 .catch (error => {alert("No fue creado" , error)})
 }
