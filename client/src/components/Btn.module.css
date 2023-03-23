@@ -1,0 +1,29 @@
+  
+  .btn {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background-color: rgb(23 207 7 / 86%);
+    border: 1px solid;
+    border-radius:2em;
+    border-color: #6e669279;
+    position: relative;
+
+    
+  }
+  .btn:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(15, 34, 201, 0.39);
+    border-radius:2em;
+    transition: all 1s ease;
+  }
+  .btn:hover:before {
+  width: 100%;
+  }
+  

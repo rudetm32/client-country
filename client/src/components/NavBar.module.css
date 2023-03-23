@@ -1,0 +1,38 @@
+.conteiner{
+    margin-left: .1em;
+    margin-right: .1em;
+    padding: 0;
+    background-color:rgba(4, 4, 65, 0.932); 
+    border-radius: 1em;
+    background-image: url("https://img2.freepng.es/20191018/orx/transparent-logo-emblem-world-symbol-flag-5db073973ada99.6359996515718450152411.jpg") ; 
+      background-repeat: no-repeat;
+      height: 3.3em;
+      background-size:contain;
+  }
+  .lista {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-evenly;
+    align-items:stretch;
+    list-style-type: none;
+    padding-right: 100px;
+    padding-top: 0.8em;
+  }
+  
+  li {
+    float: left;  
+  }
+  
+  li a{
+    text-decoration: none;
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 239, 239);
+    padding: 20px 20px;
+  }
+  
+  li a:hover {
+    background-color: rgba(26, 183, 183, 0.686)
+  }
+  

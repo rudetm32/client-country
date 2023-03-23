@@ -1,0 +1,17 @@
+.conteiner{
+    max-height: 100vh; 
+    margin: 0;
+    background-image: linear-gradient(47deg, rgb(7 46 241 / 60%), rgb(76 147 9 / 41%), rgb(54 223 215 / 81%)), 
+    url(https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/900/world.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn{
+    min-height: 100vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    
+                
+    
